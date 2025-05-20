@@ -1,0 +1,98 @@
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+}
+
+:root {
+ --background-color:rgba(10, 10, 10, 0.85);
+ --text-color:#00f2ff;
+ --text-secundary-color:rgba(0, 242, 255, 0.70);
+ --background-input: #0d0d0d;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Orbitron", sans-serif;
+    background-image: url(/assets/stardust.png);
+}
+
+.form-container {
+    background:var(--background-color);
+    color: var(--text-secundary-color);
+    border-radius: 19px;
+    margin: auto;
+}
+
+.head-form {
+    display: flex;
+    align-items: center;    
+    padding: 0.75rem;
+}
+
+.logo img{
+    width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+}
+
+.title {
+    margin-left: 2rem;
+    color: var(--text-color);
+} 
+
+.title h1 {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.title h3 {
+    font-size: 0.75em;
+    font-weight: 100;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 0.75rem;
+}
+
+
+
+form label[for="nombre"], label[for="especie"], label[for="edad"], label[for="planeta"] {
+    margin-top: 0.7rem;
+    margin-bottom: 0.3rem;
+    color: var(--text-color);
+}
+
+
+form input, select {
+    font-family: "Orbitron", sans-serif;
+    font-size: 16px;
+    background-color: var(--background-input);
+    color: var(--text-secundary-color);
+    border: solid var(--text-secundary-color) 1px;
+    border-radius: 6px;
+    padding: 0.6rem;
+}
+
+form input::placeholder {
+    color: var(--text-secundary-color);
+    font-weight: 100;
+}
+
+form fieldset {
+    margin-top: 0.7rem;
+    border: none;
+}
+
+legend {
+    color: var(--text-color);
+}
+
+.radio-group label input {
+    color: var(--text-secundary-color);
+}
+

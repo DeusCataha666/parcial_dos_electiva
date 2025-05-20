@@ -63,7 +63,9 @@ El diseño prioriza la visualización móvil, adaptándose progresivamente a pan
 
 ## 📝 Créditos y autoría
 
-**Nombre:** Jesús Eduardo (Yisus)  
+**Nombre:** Jesus Manuel Polo Sumalave
+**Rol:** Estudiante - Examen parcial II
+**Nombre:** Framel Elied Gonzalez Pallares
 **Rol:** Estudiante - Examen parcial II
 **Universo temático:** Star Wars (usado como inspiración educativa)  
 **Año:** 2025
