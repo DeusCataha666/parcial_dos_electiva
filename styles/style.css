@@ -61,14 +61,14 @@ form{
 
 
 
-form label[for="nombre"], label[for="especie"], label[for="edad"], label[for="planeta"] {
+form label[for="nombre"], label[for="especie"], label[for="edad"], label[for="planeta"], label[for="comentarios"] {
     margin-top: 0.7rem;
     margin-bottom: 0.3rem;
     color: var(--text-color);
 }
 
 
-form input, select {
+form input, select, textarea {
     font-family: "Orbitron", sans-serif;
     font-size: 16px;
     background-color: var(--background-input);
@@ -78,7 +78,7 @@ form input, select {
     padding: 0.6rem;
 }
 
-form input::placeholder {
+form input::placeholder, textarea::placeholder {
     color: var(--text-secundary-color);
     font-weight: 100;
 }
@@ -96,3 +96,13 @@ legend {
     color: var(--text-secundary-color);
 }
 
+form button {
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.75em;
+    margin-top: 1rem;
+    background-color: black;
+    color: var(--text-color);
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+}
