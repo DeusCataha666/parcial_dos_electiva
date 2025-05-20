@@ -62,53 +62,58 @@
           required
         />
 
-        <fieldset>
+        <fieldset class="fuerza">
           <legend>Nivel de Conexión con la Fuerza</legend>
-          <div class="radio-group">
-            <label
-              ><input type="radio" name="fuerza" value="bajo" required />
-              Bajo</label
-            >
-            <label
-              ><input type="radio" name="fuerza" value="medio" /> Medio</label
-            >
-            <label
-              ><input type="radio" name="fuerza" value="alto" /> Alto</label
-            >
+          <div class="strength-group">
+            <input type="radio" id="fuerza-bajo" name="fuerza" value="bajo" required hidden>
+            <label for="fuerza-bajo" class="strength-btn">Bajo</label>
+
+            <input type="radio" id="fuerza-medio" name="fuerza" value="medio" hidden>
+            <label for="fuerza-medio" class="strength-btn">Medio</label>
+
+            <input type="radio" id="fuerza-alto" name="fuerza" value="alto" hidden>
+            <label for="fuerza-alto" class="strength-btn">Alto</label>
           </div>
+          <h4>Selecciona tu nivel</h4>
         </fieldset>
 
-        <fieldset>
-          <legend>Selección de Sables de Luz Preferidos</legend>
-          <div class="checkbox-group">
+        <fieldset class="sables">
+          <legend class="sabers-colors">Selección de Sables de Luz Preferidos</legend>
+          <div class="sable-group">
             <div>
-              <label>
-                <input type="checkbox" name="sable" value="azul" /> 
-                Azul
-              </label>
-            <label>
-              <input type="checkbox" name="sable" value="verde" /> 
-              Verde
-              </label>
+              
+              <div>
+                <input type="checkbox" id="sable-azul" name="sable" value="azul" required > 
+                <label for="sable-azul" class="sable-btn">Azul</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="sable-verde" name="sable" value="verde"> 
+                <label for="sable-verde" class="sable-btn">Verde</label>
+              </div>
+
             </div>
             
             <div>
-              <label>
-              <input type="checkbox" name="sable" value="morado" />
-              Morado
-              </label>
             
-              <label>
-              <input type="checkbox" name="sable" value="rojo" /> 
-              Rojo
-             </label>
+              <div>
+                <input type="checkbox" id="sable-morado" name="sable" value="morado" />
+                <label for="sable-morado" class="sable-btn">Morado</label>
+              </div>
+            
+              <div>
+                <input type="checkbox" id="sable-rojo" name="sable" value="rojo" /> 
+                <label for="sable-rojo" class="sable-btn">Rojo</label>
+              </div>
+            
             </div>
 
-
-            <label
-              ><input type="checkbox" name="sable" value="doble" /> Doble
-              hoja</label
-            >
+            <div>
+              <div>
+                <input type="checkbox" id="sable-doblehoja" name="sable" value="doble" /> 
+                <label for="sable-doblehoja" class="sable-btn">Doble hoja</label>
+              </div>
+            </div>
           </div>
         </fieldset>
 
@@ -124,7 +129,7 @@
           Enviar solicitud al Consejo Jedi
         </button>
       </form>
-      <footer>El camino del aprendiz empieza con un clic…</footer>
+      <footer><h5>Nota</h5><p>Bienbenido a tu nuevo camino</p></footer>
     </div>
   </body>
 </html>
