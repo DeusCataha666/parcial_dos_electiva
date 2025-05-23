@@ -21,6 +21,7 @@ body {
     margin: 10px;
 }
 
+/* contenedor del formulario */
 .form-container {
     background:var(--background-color);
     color: var(--text-secundary-color);
@@ -29,33 +30,36 @@ body {
     padding: 0 0 16px 0;
 }
 
+
+/* header del formulario */
 .head-form {
     display: flex;
     align-items: center;    
     padding: 0.75rem;
+
+    .logo img{
+        width: 80px;
+        max-height: 80px;
+        border-radius: 50%;
+    }
+
+    .title {
+        margin-left: 1.8rem;
+        color: var(--text-color);
+    } 
+
+    .title h1 {
+        font-size: 1.1em;
+        font-weight: 900;
+    }
+
+    .title h3 {
+        font-size: 0.89em;
+        font-weight: 100;
+    }
 }
 
-.logo img{
-    width: 80px;
-    max-height: 80px;
-    border-radius: 50%;
-}
-
-.title {
-    margin-left: 1.8rem;
-    color: var(--text-color);
-} 
-
-.title h1 {
-    font-size: 1.1em;
-    font-weight: 900;
-}
-
-.title h3 {
-    font-size: 0.89em;
-    font-weight: 100;
-}
-
+/* cuerpo del formulario */
 form{
     display: flex;
     flex-direction: column;
@@ -83,6 +87,22 @@ form input, select {
     border-radius: 6px;
     align-items: center;
     padding: 0.6rem;
+}
+
+form select option{
+    font-size: 10px;
+}
+
+input:valid, input::selection {
+    background-color: var(--background-input);
+    border: solid var(--text-secundary-color) 1px;
+    border-radius: 6px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 form input::placeholder, textarea::placeholder {
@@ -216,4 +236,13 @@ footer p {
     font-size: 16px;
     color: var(--text-secundary-color);
 
+}
+
+@media (min-width:(1220px)){
+    .form-containe{
+        width: 100px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
 }
